@@ -34,7 +34,7 @@ function Applicant() {
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      <div className="card w-100 w-sm-75 w-md-50 p-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+      <div className="card w-50 p-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Applicant Information</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-3">
@@ -44,7 +44,6 @@ function Applicant() {
               className="form-control"
               value={formData.title}
               onChange={handleChange}
-              required
             >
               <option value="">Select title</option>
               <option value="Mr">Mr</option>
@@ -62,7 +61,6 @@ function Applicant() {
               className="form-control"
               value={formData.firstName}
               onChange={handleChange}
-              required
             />
           </div>
 
@@ -74,7 +72,6 @@ function Applicant() {
               className="form-control"
               value={formData.surname}
               onChange={handleChange}
-              required
             />
           </div>
 
@@ -85,7 +82,6 @@ function Applicant() {
               className="form-control"
               value={formData.gender}
               onChange={handleChange}
-              required
             >
               <option value="">Select gender</option>
               <option value="Male">Male</option>
@@ -102,7 +98,6 @@ function Applicant() {
               className="form-control"
               value={formData.dateOfBirth}
               onChange={handleChange}
-              required
             />
           </div>
 
@@ -114,7 +109,6 @@ function Applicant() {
               className="form-control"
               value={formData.placeOfBirth}
               onChange={handleChange}
-              required
             />
           </div>
 
@@ -127,7 +121,6 @@ function Applicant() {
               value={formData.telephone}
               onChange={handleChange}
               placeholder="Enter your telephone number"
-              required
             />
           </div>
 
@@ -138,7 +131,6 @@ function Applicant() {
               className="form-control"
               value={formData.maritalStatus}
               onChange={handleChange}
-              required
             >
               <option value="">Select marital status</option>
               <option value="Single">Single</option>
