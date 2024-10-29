@@ -1,5 +1,6 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 import Applicant from './Applicant';
 //import ApplicantDetails from './ApplicantDetails';
 import Idcard from './Idcard';
