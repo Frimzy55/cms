@@ -25,13 +25,13 @@ function Residential() {
     e.preventDefault();
     console.log('Residential Data:', { ...formData, ...residentialData });
 
-    // Redirect to the next page, e.g., "/next-page"
+    // Redirect to the next page, e.g., "/WorkInformation"
     navigate('/WorkInformation', { state: { ...formData, ...residentialData } });
   };
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      <div className="card w-50 p-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+      <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '500px', maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Residential Details</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-3">

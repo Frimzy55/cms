@@ -41,7 +41,7 @@ function WorkInformation() {
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
-      <div className="card w-50 p-4" style={{ maxHeight: '80vh', overflowY: 'auto' }}>
+      <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '600px', maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Work Information</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-3">
@@ -74,7 +74,6 @@ function WorkInformation() {
                   placeholder="Enter Nature of Business"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Location of Business:</label>
                 <input
@@ -103,7 +102,6 @@ function WorkInformation() {
                   placeholder="Enter Occupation"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Name of Employer:</label>
                 <input
@@ -115,7 +113,6 @@ function WorkInformation() {
                   placeholder="Enter Employer's Name"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Location of Employer:</label>
                 <input
@@ -127,7 +124,6 @@ function WorkInformation() {
                   placeholder="Enter Location of Employer"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Years in Service:</label>
                 <input
@@ -139,7 +135,6 @@ function WorkInformation() {
                   placeholder="Enter Years in Service"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Job Title:</label>
                 <input
@@ -151,7 +146,6 @@ function WorkInformation() {
                   placeholder="Enter Job Title"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Monthly Net Salary:</label>
                 <input
@@ -163,7 +157,6 @@ function WorkInformation() {
                   placeholder="Enter Monthly Net Salary"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Digital Address of Workplace:</label>
                 <input
@@ -192,13 +185,7 @@ function WorkInformation() {
                 <option value="Education Service">Education Service</option>
                 <option value="Military">Military</option>
                 <option value="Police Service">Police Service</option>
-                <option value="Immigration Service">Immigration Service</option>
-                <option value="Fire Service">Fire Service</option>
-                <option value="Prisons Service">Prisons Service</option>
-                <option value="Customs Service">Customs Service</option>
-                <option value="Legal Service">Legal Service</option>
-                <option value="Ghana Revenue Service">Ghana Revenue Service</option>
-                <option value="Audit Service">Audit Service</option>
+                {/* Add more options if needed */}
               </select>
             </div>
           )}
@@ -217,7 +204,6 @@ function WorkInformation() {
                   placeholder="Enter Ministry"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Management Unit:</label>
                 <input
@@ -229,7 +215,6 @@ function WorkInformation() {
                   placeholder="Enter Management Unit"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Rank/Job Title:</label>
                 <input
@@ -241,7 +226,6 @@ function WorkInformation() {
                   placeholder="Enter Rank or Job Title"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Department:</label>
                 <input
@@ -253,7 +237,6 @@ function WorkInformation() {
                   placeholder="Enter Department"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Region:</label>
                 <input
@@ -265,7 +248,6 @@ function WorkInformation() {
                   placeholder="Enter Region"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>District:</label>
                 <input
@@ -277,7 +259,6 @@ function WorkInformation() {
                   placeholder="Enter District"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Suburb:</label>
                 <input
@@ -289,7 +270,6 @@ function WorkInformation() {
                   placeholder="Enter Suburb"
                 />
               </div>
-
               <div className="form-group mb-3">
                 <label>Monthly Net Salary:</label>
                 <input
