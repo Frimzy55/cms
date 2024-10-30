@@ -46,7 +46,7 @@ function WorkInformation() {
     console.log('ID Card Data:', { ...formData, ...workData });
 
     // Redirect to the next page, e.g., "/Residential"
-    navigate('/new', { state: { ...formData, ...workData } });
+    navigate('/Reference', { state: { ...formData, ...workData } });
   };
 
   return (
