@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+.btn-orange {
+  background-color: #FFA500; /* Example orange color */
+  color: white; /* Change text color to white for contrast */
+}
+
+.btn-orange:hover {
+  background-color: #e59400; /* Darker orange on hover */
+}

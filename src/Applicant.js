@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import logo from './yonko.png'; 
+import './App.css';// Adjust the path to your logo file
 
 function Applicant() {
   const [formData, setFormData] = useState({
@@ -33,7 +35,11 @@ function Applicant() {
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex flex-column justify-content-center align-items-center vh-100">
+      <div style={{ backgroundColor: '#4158A6', width: '100%', padding: '10px 0', textAlign: 'center' }}>
+        <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Adjust logo size as needed */}
+        <h1 className="text-white">Customer Management</h1>
+      </div>
       <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '500px', maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Applicant Information</h2>
         <form onSubmit={handleSubmit}>
@@ -158,7 +164,7 @@ function Applicant() {
             <button type="button" className="btn btn-primary me-2">
               Submit
             </button>
-            <button type="submit" className="btn btn-secondary ms-2">
+            <button type="submit" className="btn btn-orange ms-2">
               Next
             </button>
           </div>
