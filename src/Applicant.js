@@ -36,9 +36,9 @@ function Applicant() {
 
   return (
     <div className="d-flex flex-column justify-content-center align-items-center vh-100">
-      <div style={{ backgroundColor: '#4158A6', width: '100%', padding: '10px 0', textAlign: 'center' }}>
+      <div style={{ backgroundColor: 'white', width: '100%', padding: '10px 0', textAlign: 'center' }}>
         <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Adjust logo size as needed */}
-        <h1 className="text-white">Customer Management</h1>
+        <h2 className="text-black">Yonkopa Micro-Credit Enterprise</h2>
       </div>
       <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '500px', maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Applicant Information</h2>

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
+import logo from './yonko.png'; 
 
 function WorkInformation() {
   const location = useLocation();
   const formData = location.state || {};
+  const navigate = useNavigate();
 
   const [workData, setWorkData] = useState({
     employmentStatus: '',
@@ -33,14 +35,27 @@ function WorkInformation() {
     }));
   };
 
+  //const handleSubmit = (e) => {
+   // e.preventDefault();
+    //console.log('Work Information:', { ...formData, ...workData });
+    // Add logic for further processing or saving data
+  //};
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Work Information:', { ...formData, ...workData });
-    // Add logic for further processing or saving data
+    console.log('ID Card Data:', { ...formData, ...workData });
+
+    // Redirect to the next page, e.g., "/Residential"
+    navigate('/new', { state: { ...formData, ...workData } });
   };
 
   return (
-    <div className="d-flex justify-content-center align-items-center vh-100">
+    <div className="d-flex flex-column justify-content-center align-items-center vh-100">
+        
+      <div style={{ backgroundColor: 'white', width: '100%', padding: '10px 0', textAlign: 'center' }}>
+        <img src={logo} alt="Logo" style={{ width: '100px', height: 'auto' }} /> {/* Adjust logo size as needed */}
+        <h1 className="text-white"></h1>
+      </div>
       <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '600px', maxHeight: '80vh', overflowY: 'auto' }}>
         <h2 className="card-title text-center">Work Information</h2>
         <form onSubmit={handleSubmit}>
@@ -284,14 +299,23 @@ function WorkInformation() {
             </>
           )}
 
-          <div className="d-flex justify-content-between mt-4">
-            <button type="button" className="btn btn-primary me-2">
-              Submit
-            </button>
-            <button type="submit" className="btn btn-secondary ms-2">
-              Next
-            </button>
-          </div>
+<div className="d-flex justify-content-between mt-4">
+  {/* Left-aligned Submit button */}
+  <button type="button" className="btn btn-primary" onClick={() => alert('Form Submitted')}>
+    Submit
+  </button>
+
+  {/* Right-aligned Back and Next buttons */}
+  <div>
+    <button type="button" className="btn btn-secondary me-2" onClick={() => navigate(-1)}>
+      Back
+    </button>
+    <button type="submit" className="btn btn-orange">
+      Next
+    </button>
+  </div>
+</div>
+
         </form>
       </div>
     </div>
