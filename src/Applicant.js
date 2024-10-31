@@ -146,19 +146,35 @@ function Applicant() {
             </select>
           </div>
 
+          
           {formData.maritalStatus === 'Married' && (
-            <div className="form-group mb-3">
-              <label>Name of Spouse:</label>
-              <input
-                type="text"
-                name="spouseName"
-                className="form-control"
-                value={formData.spouseName}
-                onChange={handleChange}
-                placeholder="Enter spouse's name"
-              />
-            </div>
-          )}
+  <>
+    <div className="form-group mb-3">
+      <label>Name of Spouse:</label>
+      <input
+        type="text"
+        name="spouseName"
+        className="form-control"
+        value={formData.spouseName}
+        onChange={handleChange}
+        placeholder="Enter spouse's name"
+      />
+    </div>
+    
+    <div className="form-group mb-3">
+      <label>Spouse Contact:</label>
+      <input
+        type="text"
+        name="spouseContact"
+        className="form-control"
+        value={formData.spouseContact}
+        onChange={handleChange}
+        placeholder="Enter spouse's contact"
+      />
+    </div>
+  </>
+)}
+
 
           <div className="d-flex justify-content-between mt-4">
             <button type="button" className="btn btn-primary me-2">

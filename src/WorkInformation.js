@@ -186,24 +186,105 @@ function WorkInformation() {
             </>
           )}
 
-          {/* Fields for Civil Servant */}
+          {/* Conditionally render fields for Civil Servant */}
           {workData.employmentStatus === 'Civil Servant' && (
-            <div className="form-group mb-3">
-              <label>Service Type:</label>
-              <select
-                name="civilServiceType"
-                className="form-control"
-                value={workData.civilServiceType}
-                onChange={handleChange}
-              >
-                <option value="">Select Service Type</option>
-                <option value="Education Service">Education Service</option>
-                <option value="Military">Military</option>
-                <option value="Police Service">Police Service</option>
-                {/* Add more options if needed */}
-              </select>
-            </div>
+            <>
+              <div className="form-group mb-3">
+                <label>Service Type:</label>
+                <select
+                  name="civilServiceType"
+                  className="form-control"
+                  value={workData.civilServiceType}
+                  onChange={handleChange}
+                >
+                  <option value="">Select Service Type</option>
+                  <option value="Education Service">Education Service</option>
+                  <option value="Military">Military</option>
+                  <option value="Police Service">Police Service</option>
+                </select>
+              </div>
+
+              {/* Additional fields for Education Service, Military, or Police Service */}
+              {(workData.civilServiceType === 'Education Service' ||
+                workData.civilServiceType === 'Military' ||
+                workData.civilServiceType === 'Police Service') && (
+                <>
+                  <div className="form-group mb-3">
+                    <label>Employer Name:</label>
+                    <input
+                      type="text"
+                      name="employerName"
+                      className="form-control"
+                      value={workData.employerName}
+                      onChange={handleChange}
+                      placeholder="Enter Employer Name"
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Location of Barracks:</label>
+                    <input
+                      type="text"
+                      name="location"
+                      className="form-control"
+                      value={workData.location}
+                      onChange={handleChange}
+                      placeholder="Enter Location of Barracks"
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Rank/Grade:</label>
+                    <input
+                      type="text"
+                      name="rankOrJobTitle"
+                      className="form-control"
+                      value={workData.rankOrJobTitle}
+                      onChange={handleChange}
+                      placeholder="Enter Rank or Grade"
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Years in Service:</label>
+                    <input
+                      type="number"
+                      name="yearsInService"
+                      className="form-control"
+                      value={workData.yearsInService}
+                      onChange={handleChange}
+                      placeholder="Enter Years in Service"
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Monthly Net Salary:</label>
+                    <input
+                      type="number"
+                      name="monthlyNetSalary"
+                      className="form-control"
+                      value={workData.monthlyNetSalary}
+                      onChange={handleChange}
+                      placeholder="Enter Monthly Net Salary"
+                    />
+                  </div>
+                  <div className="form-group mb-3">
+                    <label>Digital Address of Workplace:</label>
+                    <input
+                      type="text"
+                      name="digitalAddressWorkplace"
+                      className="form-control"
+                      value={workData.digitalAddressWorkplace}
+                      onChange={handleChange}
+                      placeholder="Enter Digital Address of Workplace"
+                    />
+                  </div>
+                </>
+              )}
+            </>
           )}
+
+
+
+
+
+
 
           {/* Additional Fields for 'Others' in Employment Status */}
           {workData.employmentStatus === 'Others' && (

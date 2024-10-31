@@ -98,15 +98,7 @@ function Document() {
             />
           </div>
 
-          <div className="form-group mb-3">
-            <label>Profile Picture:</label>
-            <input
-              type="file"
-              name="profilePicture"
-              className="form-control"
-              onChange={handleFileChange}
-            />
-          </div>
+          
 
           <div className="form-group mb-3">
             <label>ID Front:</label>
@@ -123,6 +115,16 @@ function Document() {
             <input
               type="file"
               name="idBack"
+              className="form-control"
+              onChange={handleFileChange}
+            />
+          </div>
+
+          <div className="form-group mb-3">
+            <label>Profile Picture:</label>
+            <input
+              type="file"
+              name="profilePicture"
               className="form-control"
               onChange={handleFileChange}
             />
