@@ -88,7 +88,7 @@ function Reference() {
           ))}
 
           <div className="d-flex justify-content-between mt-4">
-            <button type="button" className="btn btn-primary" onClick={() => alert('Form Submitted')}>
+            <button type="button" className="btn btn-light" onClick={() => alert('Form Submitted')}>
               Submit
             </button>
             <div>

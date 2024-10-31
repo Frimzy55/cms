@@ -177,7 +177,7 @@ function Applicant() {
 
 
           <div className="d-flex justify-content-between mt-4">
-            <button type="button" className="btn btn-primary me-2">
+            <button type="button" className="btn btn-light me-2">
               Submit
             </button>
             <button type="submit" className="btn btn-orange ms-2">

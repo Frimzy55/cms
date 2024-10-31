@@ -44,3 +44,12 @@
 .btn-orange:hover {
   background-color: #e59400; /* Darker orange on hover */
 }
+
+.btn-light {
+  background-color: #00b4d8; /* Example orange color */
+  color: white; /* Change text color to white for contrast */
+}
+
+.btn-light:hover{
+  background-color: #0077b6;
+}

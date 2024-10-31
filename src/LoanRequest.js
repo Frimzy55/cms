@@ -78,7 +78,7 @@ function LoanRequest() {
             />
           </div>
          
-          <button type="submit" className="btn btn-primary me-2">
+          <button type="submit" className="btn btn-light me-2">
             Submit
           </button>
 
