@@ -8,6 +8,7 @@ import Residential from './Residential';
 import WorkInformation from './WorkInformation';
 import Reference from './Reference';
 import Document from './Document';
+import LoanRequest from './LoanRequest';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/WorkInformation' element={<WorkInformation/>}/>
         <Route path='/Reference'element={<Reference/>}/>
         <Route path='/Document'element={<Document/>}/>
+        <Route path='/LoanRequest' element={<LoanRequest/>}/>
       </Routes>
     </Router>
   );

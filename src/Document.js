@@ -40,7 +40,7 @@ function Document() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Data:', { ...formData, ...idCardData });
-    navigate('/Res', { state: { ...formData, ...idCardData } });
+    navigate('/LoanRequest', { state: { ...formData, ...idCardData } });
   };
 
   return (
@@ -64,39 +64,7 @@ function Document() {
             </select>
           </div>
 
-          <div className="form-group mb-3">
-            <label>ID Number:</label>
-            <input
-              type="text"
-              name="idNumber"
-              className="form-control"
-              value={idCardData.idNumber}
-              onChange={handleChange}
-              placeholder="Enter ID number"
-            />
-          </div>
-
-          <div className="form-group mb-3">
-            <label>Date of Issue:</label>
-            <input
-              type="date"
-              name="dateOfIssue"
-              className="form-control"
-              value={idCardData.dateOfIssue}
-              onChange={handleChange}
-            />
-          </div>
-
-          <div className="form-group mb-3">
-            <label>Expiry Date:</label>
-            <input
-              type="date"
-              name="expiryDate"
-              className="form-control"
-              value={idCardData.expiryDate}
-              onChange={handleChange}
-            />
-          </div>
+          
 
           
 
