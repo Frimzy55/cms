@@ -1,3 +1,6 @@
+
+
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -41,7 +44,7 @@ function Applicant() {
         <h2 className="text-black">Yonkopa Micro-Credit Enterprise</h2>
       </div>
       <div className="card w-100 w-md-50 p-4" style={{ maxWidth: '500px', maxHeight: '80vh', overflowY: 'auto' }}>
-        <h2 className="card-title text-center">Applicant Information</h2>
+        <h2 className="card-title text-center">Customer Information</h2>
         <form onSubmit={handleSubmit}>
           <div className="form-group mb-3">
             <label>Title:</label>
@@ -80,7 +83,7 @@ function Applicant() {
               onChange={handleChange}
             />
           </div>
-
+\
           <div className="form-group mb-3">
             <label>Gender:</label>
             <select
